@@ -1,193 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" scroll-behavior="smooth">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeremy Clarkson's Personal Website - Automotive Journalist, TV Presenter, and Farmer">
+    <meta name="keywords" content="Jeremy Clarkson, Top Gear, The Grand Tour, Clarkson's Farm, Automotive">
+    <title>Jeremy Clarkson - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="./Data/Photos/jeremy-clarkson-profile.JPG">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<header>
+    <div class="logo">
+        <img src="./Data/Photos/jeremy-clarkson-profile.JPG" alt="Jeremy Clarkson Profile Picture">
+        <h3>Jeremy Clarkson</h3>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about" aria-label="About Me Section"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#photos" aria-label="Photo Gallery Section"><i class="fas fa-images"></i> My Photos</a></li>
+            <li><a href="#playlist" aria-label="Video Playlist Section"><i class="fas fa-play-circle"></i> My Playlist</a></li>
+            <li><a href="#like" aria-label="Like Section"><i class="fas fa-heart"></i> Like</a></li>
+            <li><a href="#qr" aria-label="QR Code Section"><i class="fas fa-qrcode"></i> QR Code</a></li>
+            <li><a href="#qa" aria-label="Q&A Section"><i class="fas fa-question-circle"></i> Q&A</a></li>
+            <li><a href="#contact" aria-label="Contact Section"><i class="fas fa-envelope"></i> Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section id="about" aria-labelledby="about-title">
+        <div class="section-title">
+            <h2 id="about-title">About Me</h2>
+        </div>
+        <div class="content">
+            <div class="gallery-container">
+                <article>
+                    <p><strong>Name:</strong> Jeremy Clarkson</p>
+                    <p>Born in 1960 in Doncaster, England, Jeremy Clarkson began his career as a local journalist before revolutionizing automotive television as the incendiary host of Top Gear (2002–2015). His larger-than-life persona—combining encyclopedic car knowledge with deliberately provocative humor—made him a global star, though frequent controversies (like his 2015 BBC firing) kept him in headlines.</p>
+                    <p>Beyond television, Clarkson's life orbits around three passions: cars (from vintage Jaguars to absurdly powerful hypercars), writing (bestselling books and contentious newspaper columns), and farming (documented in Clarkson's Farm, where his war against mud and bureaucracy delights viewers).</p>
+                    <p>The most profound human influence? His late mother, Shirley Clarkson, whose sharp wit and no-nonsense Yorkshire pragmatism shaped his humor and work ethic. "She taught me that if you can't laugh at yourself," he's said, "you've missed the biggest joke of all."</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+<section id="photos">
+    <div class="section-title">
+        <h2>My Photos</h2>
+    </div>
+    <div class="content">
+        <div class="gallery-container">
+            <div class="gallery" id="mainGallery">
+                <img src="./Data/Photos/grand%20tour.jpg" alt="Jeremy Clarkson Photo 1">
+                <img src="./Data/Photos/Clarkson-on-the-Porsche-928.png" alt="Jeremy Clarkson Photo 2">
+                <img src="./Data/Photos/with-fam-1.jpg" alt="Jeremy Clarkson Photo 3">
+                <img src="./Data/Photos/with-fam-2.jpg" alt="Jeremy Clarkson Photo 4">
+                <img src="./Data/Photos/with-fam-3.jpg" alt="Jeremy Clarkson Photo 5">
+            </div>
+
+            <div class="gallery-nav">
+                <button onclick="scrollGallery(-1)" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="scrollGallery(1)" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="playlist" aria-labelledby="playlist-title">
+        <div class="section-title">
+            <h2 id="playlist-title">My Playlist</h2>
+        </div>
+        <div class="content">
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/tUy82fMWJs4"
+                    title="Jeremy Clarkson Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="like">
+        <div class="section-title">
+            <h2>Like</h2>
+        </div>
+        <div class="content">
+            <div class="like-container">
+                <button id="likeButton" class="like-button" aria-label="Like this page">
+                    <span class="heart-icon"><i class="fas fa-heart"></i></span>
+                    <span class="like-text">Like</span>
+                </button>
+                <div class="like-counter">
+                    <span id="likeCount">0</span> likes
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="qr">
+        <div class="section-title">
+            <h2>QR Code</h2>
+        </div>
+        <div class="content">
+            <figure class="qr-container">
+                <img src="./Data/qr-code.png" alt="Website QR Code" loading="lazy">
+            </figure>
+        </div>
+    </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="qa">
+        <div class="section-title">
+            <h2>Q&A</h2>
+        </div>
+        <div class="content">
+            <div class="qa-container">
+                <article class="qa-container" id="question1">
+                    <h1>Web1, Web2 ו-Web3 תשובה לשאלה 1: שלושה הבדלים עיקריים בין</h1>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+                    <h2>1. מבנה התוכן ואינטראקציה</h2>
+            
+                    <div class="web-version">
+                        <span class="web-title">Web1:</span>
+                        <ul>
+                            <li>דפי HTML סטטיים (למשל, אתרי תאגידים מוקדמים).</li>
+                            <li>ללא אינטראקציה (קריאה בלבד).</li>
+                            <li>חיפוש בסיסי.</li>
+                        </ul>
+                    </div>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+                    <div class="web-version">
+                        <span class="web-title">Web2:</span>
+                        <ul>
+                            <li>תוכן דינמי שנוצר על ידי משתמשים (למשל, פוסטים בפייסבוק, סרטונים ביוטיוב).</li>
+                            <li>פלטפורמות אינטראקטיביות (תגובות, לייקים, שיתופים).</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version">
+                        <span class="web-title">Web3:</span>
+                        <ul>
+                            <li>תוכן סמנטי שמאורגן על ידי בינה מלאכותית.</li>
+                            <li>נתונים מפוזרים באינטרנט.</li>
+                        </ul>
+                    </div>
+
+                    <h2>2. טכנולוגיה וניהול נתונים</h2>
+
+                    <div class="web-version">
+                        <span class="web-title">Web1:</span>
+                        <ul>
+                            <li>עיצוב בסיסי (טבלאות, מסגרות), דפדפנים סגורים.</li>
+                            <li>עדכונים ידניים (אין נתונים בזמן אמת).</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version">
+                        <span class="web-title">Web2:</span>
+                        <ul>
+                            <li>ממשקי API וחישוב בענן (עדכונים בזמן אמת).</li>
+                            <li>שליטה מרכזית בנתונים (חברות מחזיקות בנתוני המשתמשים).</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version">
+                        <span class="web-title">Web3:</span>
+                        <ul>
+                            <li>חיפוש סמנטי (למשל תופעות לוואי של תרופה X).</li>
+                            <li>למידת מכונה ועיבוד שפה טבעית (NLP).</li>
+                        </ul>
+                    </div>
+
+                    <h2>3. בעלות ושליטה</h2>
+
+                    <div class="web-version">
+                        <span class="web-title">Web1:</span>
+                        <ul>
+                            <li>חברות החזיקו בכל התוכן של הדף, לא היה למשתמשים אפשרות שתהיה אינטראקציה בדף.</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version">
+                        <span class="web-title">Web2:</span>
+                        <ul>
+                            <li>משתמשים יוצרים תוכן אבל הפלטפורמות מרוויחות ממנו.</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version">
+                        <span class="web-title">Web3:</span>
+                        <ul>
+                            <li>משתמשים שולטים בנתונים דרך blockchain.</li>
+                            <li>ידע פתוח ומאורגן.</li>
+                        </ul>
+                    </div>
+                    <h2></h2>
+                    <h1>" תשובה של שאלה שנייה :דוגמת תרחיש שימוש: חיפוש "תופעות לוואי של תרופות</h1>
+                    <h2>(Web1) בשנות ה-90</h2>
+
+                    <div class="web-version"> 
+                        <span class="web-title">:תוצאה</span>
+                        <ul>
+                            <li> .סטטי מחברת תרופות, עם רשימה של תופעות לוואי בטקסט פשוט HTML דף</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version"> 
+                        <span class="web-title">:מגבלה</span>
+                        <ul>
+                            <li> .אין עדכונים, אין קלט משתמשים, ודייקנות חיפוש נמוכה</li>
+                        </ul>
+                    </div>
+
+                    <h2> (web2) בשנות ה-2000</h2>
+                    <div class="web-version"> 
+                        <span class="web-title">:תוצאה</span>
+                        <ul>
+                            <li> .קבוצות בפייסבוק שבין חולים משתפים חוויות</li>
+                            <li>.סרטוני יוטיוב מרופאים</li>
+                            <li>.גוגל מתעדף תוצאות לפי ההיסטוריה שלך</li>
+                        </ul>
+                    </div>
+
+                    <div class="web-version"> 
+                        <span class="web-title">:בעייה</span>
+                        <ul>
+                            <li> .פלטפורמות עוקבות אחרי שאילתות הבריאות שלך ומרוויחות מהן</li>
+                        </ul>
+                    </div>
+
+                    <h2>Web3 עתיד</h2>
+                    <div class="web-version"> 
+                        <span class="web-title">:תוצאה</span>
+                        <ul>
+                            <li> .בינה מלאכותית סמנטית מרכיבה נתונים מכתבי עת רפואיים מבוזרים, פורומים וניסויים קליניים.</li>
+                            <li>.שאילתה: "הצג תופעות לוואי של תרופה X בקרב מטופלים מעל גיל 60 באפריקה" → הבינה מספקת דוח מותאם ממסד נתונים גלובלי</li>
+                            <li>.משתמשים מרוויחים טוקנים על ידי תרומת נתונים (למשל, שיתוף תוצאות טיפול שלהם).</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="content">
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="subject">נושא:</label>
+                    <input type="text" id="subject" name="subject" required autocomplete="off">
+                    <div class="error-message">Please enter a subject</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">תוכן ההודעה:</label>
+                    <textarea id="message" name="message" rows="5" required autocomplete="off"></textarea>
+                    <div class="error-message">Please enter a message</div>
+                </div>
+
+                <div class="emoji-section">
+                    <div class="emoji-section-title">הוסף אימוג'י להודעה:</div>
+                    <div class="emoji-buttons">
+                        <button type="button" class="emoji-button" data-emoji="🥰" aria-label="Add love emoji">🥰</button>
+                        <button type="button" class="emoji-button" data-emoji="😂" aria-label="Add laugh emoji">😂</button>
+                        <button type="button" class="emoji-button" data-emoji="😎" aria-label="Add cool emoji">😎</button>
+                        <button type="button" class="emoji-button" data-emoji="🏎️" aria-label="Add car emoji">🏎️</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    <i class="fas fa-paper-plane"></i> שלח
+                </button>
+            </form>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i> תודה! ההודעה נשלחה בהצלחה.
+            </div>
+        </div>
+    </section>
+</body>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+<script src="script.js"></script>
 </body>
 </html>
