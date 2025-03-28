@@ -1,4 +1,4 @@
-website link : [link]([https://wed-2023.github.io/assignment1-fadiz911/](https://wed-2023.github.io/214026775/))
+website link : [link](https://wed-2023.github.io/214026775/)
 
 #---------------------------------------------------------------------------------------
 
